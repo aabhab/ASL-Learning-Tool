@@ -1,0 +1,96 @@
+/* LessonThree.css */
+
+.lesson-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center children horizontally */
+  background: linear-gradient(to right, #dae2f8, #d6a4a4); /* Soft gradient background */
+  background-attachment: fixed; /* Fixed background on scroll */
+  background-size: cover; /* Ensure it covers the whole screen */
+  background-repeat: no-repeat; /* Do not repeat the background */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.lesson-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.real-time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%; /* Ensure it takes the full width of its container */
+  box-sizing: border-box; /* Padding doesn't add to the width */
+}
+
+.real-time-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #5c6bc0;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-transform: none;
+}
+
+.real-time-button:hover {
+  background-color: #3f51b5;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; /* Light background for the button box */
+}
+
+.letter-button {
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: #5c6bc0;
+  border: 2px solid #5c6bc0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.letter-button:hover {
+  background-color: #5c6bc0;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.active-letter {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .lesson-container {
+      padding: 1rem;
+  }
+
+  .real-time-button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+  }
+
+  .lesson-card {
+      margin-bottom: 1rem;
+  }
+
+  .letter-button {
+      padding: 8px 14px;
+  }
+}
