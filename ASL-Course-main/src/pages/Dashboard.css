@@ -1,0 +1,54 @@
+/* Dashboard.css */
+.dashboard-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .dashboard-card {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .dashboard-heading {
+    font-size: 2.5rem; /* Larger size */
+    font-weight: 600; /* Semi-bold */
+    color: #29434e;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-select,
+  .dashboard-button {
+    border-radius: 25px; /* Rounded corners */
+    height: 55px; /* Matching height */
+  }
+  
+  .dashboard-button {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dashboard-button:hover {
+    background: linear-gradient(45deg, #FF8E53 30%, #FE6B8B 90%);
+    transform: translateY(-2px); /* Slight lift */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-card {
+      padding: 30px;
+    }
+  
+    .dashboard-heading {
+      font-size: 2rem; /* Adjust for smaller screens */
+    }
+  
+    /* Adjustments for other elements as necessary */
+  }
+  
