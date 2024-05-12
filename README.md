@@ -1,4 +1,5 @@
-#ASL Learning Tool
+##ASL Learning Tool
+
 Welcome to the ASL Learning Tool, web application designed to help users learn American Sign Language (ASL) efficiently and interactively.
 
 Features
